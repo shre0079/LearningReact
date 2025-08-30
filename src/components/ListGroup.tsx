@@ -7,13 +7,11 @@ function ListGroup() {
     "California",
   ];
 
-  if (items.length === 0)
-    return (
-      <>
-        {" "}
-        <h1>List</h1> <p>No items found</p>
-      </>
-    );
+  items=[]
+
+  const getMessage = () => {
+      return items.length===0 ? <p>No item found</p> : null;
+  }
 
   return (
     <>
