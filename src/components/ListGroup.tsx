@@ -1,5 +1,7 @@
+import message from "../Message";
+
 function ListGroup() {
-  const items = [
+  let items = [
     "Washington",
     "New York",
     "San Francisco",
@@ -9,14 +11,11 @@ function ListGroup() {
 
   items=[]
 
-  const getMessage = () => {
-      return items.length===0 ? <p>No item found</p> : null;
-  }
-
   return (
     <>
       <h1>List</h1>
         {items.length===0 ? <p>No item found</p> : null}
+        {items.length===0 && <p>No item found</p>}
       <ul className="list-group">
         {items.map((item) => (
           <li key={item}>{item}</li>
