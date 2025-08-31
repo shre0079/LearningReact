@@ -1,11 +1,9 @@
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 
 function App() {
     return (
         <div>
-            <Alert>
-                Hello World
-            </Alert>
+            <Button onClick={() => console.log("Clicked")}>My Button</Button>
         </div>
     );
 }
