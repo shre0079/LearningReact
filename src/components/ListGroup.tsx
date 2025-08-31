@@ -1,13 +1,11 @@
 import {useState} from "react";
 
-function ListGroup() {
-    let items = [
-        "Washington",
-        "New York",
-        "San Francisco",
-        "Las Vegas",
-        "California"
-    ];
+interface Props {
+    items: string[];
+    heading: string;
+}
+
+function ListGroup({items, heading}: Props) {
 
     const [selectedIndex, setSelectedIndex] = useState(-1);
 
