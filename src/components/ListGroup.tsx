@@ -10,8 +10,8 @@ function ListGroup() {
     ];
     let selectedIndex = 0;
 
-    //event handling
-    const handleClick = (event: MouseEvent) => console.log(event);
+    const [selectedIndex, setSelectedIndex] = useState(-1);
+
 
     return (
         <>
