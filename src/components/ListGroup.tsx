@@ -9,7 +9,8 @@ function ListGroup() {
     "California",
   ];
 
-  items=[]
+  //event handling
+  const handleClick = (event:MouseEvent) => console.log(event);
 
   return (
     <>
