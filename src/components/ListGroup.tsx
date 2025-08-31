@@ -1,4 +1,4 @@
-import message from "../Message";
+import {MouseEvent} from "react";
 
 function ListGroup() {
   let items = [
